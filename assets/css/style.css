@@ -1,14 +1,15 @@
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1;
+  background-color: rgb(248, 248, 248);
 }
 
+/* ----- hero/ header section ----- */
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
   border-left: 1px solid black;
   padding: 10px;
 }
@@ -16,25 +17,98 @@ textarea {
 header {
   text-align: center;
   background-color: transparent;
-  color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
-  padding: 60px;
+  padding-top: 20px;
 }
 
-.description {
-  white-space: pre-wrap;
+h1,
+.lead {
+  margin-bottom: 15px;
 }
 
-.time-block {
-  text-align: center;
-  border-radius: 15px;
+#currentDay {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(224, 224, 224);
+}
+
+.lowerHeaderContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* -------- light/ dark mode toggle -------- */
+.switchContainer {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 0px;
+}
+
+.switch {
+  width: 35px;
+}
+
+.switch:hover {
+  cursor: pointer;
+}
+
+/* -------- container section -------- */
+.container {
+  border-radius: 10px;
 }
 
 .row {
+  border-top: solid 2px black;
+  border-right: solid 2px black;
+  border-left: solid 2px black;
+  height: 75px !important;
+}
+
+.time {
+  border-right: 2px solid black;
+  margin: auto !important;
+  height: 35px;
+  padding-top: 10px;
+}
+
+.save {
+  border-left: 2px solid black;
+  margin: auto !important;
+}
+
+.save:hover {
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  outline: inherit;
+}
+
+.save-img {
+  width: 35px;
+}
+
+.content {
+  margin: auto !important;
+}
+
+.bottom-row {
+  border-bottom: solid 2px black;
+}
+
+textarea {
+  border: none;
+  outline: none;
+}
+
+/* -------- starter code -------- */
+.description {
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
 }
 
 .hour {
@@ -44,7 +118,7 @@ header {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: rgb(224, 224, 224);
   color: white;
 }
 
@@ -56,17 +130,4 @@ header {
 .future {
   background-color: #77dd77;
   color: white;
-}
-
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
-}
-
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
 }

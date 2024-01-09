@@ -25,13 +25,128 @@
   </head>
 
   <body>
+    <!-- hero section -->
     <header>
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <h1 class="display-3 text-dark">Work Day Scheduler</h1>
+      <p class="lead text-dark">
+        <i>A simple calendar app for scheduling your work day</i>
+      </p>
+      <div class="lowerHeaderContainer">
+        <p id="currentDay" class="lead"></p>
+        <!-- light/ dark mode switch -->
+        <div class="switchContainer">
+          <img
+            src="./assets/images/toggle-black.png"
+            alt="switch"
+            class="switch"
+            id="switch"
+          />
+          <!-- <img src="./assets/images/toggle-white.png" alt="switch" /> -->
+        </div>
+      </div>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+
+    <!-- bootstrap version -->
+    <div class="container my-4" id="container">
+      <div class="row text-dark rounded-top-4">
+        <div class="col-2 text-center time" id="9">9:00am</div>
+        <textarea class="col-9 content"></textarea>
+        <button class="col-1 text-center save">
+          <img
+            src="./assets/images/save-(black).png"
+            alt="Save"
+            class="save-img"
+          />
+        </button>
+      </div>
+      <div class="row text-dark">
+        <div class="col-2 text-center time" id="10">10:00am</div>
+        <textarea class="col-9 content"></textarea>
+        <button class="col-1 text-center save">
+          <img
+            src="./assets/images/save-(black).png"
+            alt="Save"
+            class="save-img"
+          />
+        </button>
+      </div>
+      <div class="row text-dark">
+        <div class="col-2 text-center time" id="11">11:00am</div>
+        <textarea class="col-9 content"></textarea>
+        <button class="col-1 text-center save">
+          <img
+            src="./assets/images/save-(black).png"
+            alt="Save"
+            class="save-img"
+          />
+        </button>
+      </div>
+      <div class="row text-dark">
+        <div class="col-2 text-center time" id="12">12:00am</div>
+        <textarea class="col-9 content"></textarea>
+        <button class="col-1 text-center save">
+          <img
+            src="./assets/images/save-(black).png"
+            alt="Save"
+            class="save-img"
+          />
+        </button>
+      </div>
+      <div class="row text-dark">
+        <div class="col-2 text-center time" id="13">13:00pm</div>
+        <textarea class="col-9 content"></textarea>
+        <button class="col-1 text-center save">
+          <img
+            src="./assets/images/save-(black).png"
+            alt="Save"
+            class="save-img"
+          />
+        </button>
+      </div>
+      <div class="row text-dark">
+        <div class="col-2 text-center time" id="14">14:00pm</div>
+        <textarea class="col-9 content"></textarea>
+        <button class="col-1 text-center save">
+          <img
+            src="./assets/images/save-(black).png"
+            alt="Save"
+            class="save-img"
+          />
+        </button>
+      </div>
+      <div class="row text-dark">
+        <div class="col-2 text-center time" id="15">15:00pm</div>
+        <textarea class="col-9 content"></textarea>
+        <button class="col-1 text-center save">
+          <img
+            src="./assets/images/save-(black).png"
+            alt="Save"
+            class="save-img"
+          />
+        </button>
+      </div>
+      <div class="row text-dark">
+        <div class="col-2 text-center time" id="16">16:00pm</div>
+        <textarea class="col-9 content"></textarea>
+        <button class="col-1 text-center save">
+          <img
+            src="./assets/images/save-(black).png"
+            alt="Save"
+            class="save-img"
+          />
+        </button>
+      </div>
+      <div class="row text-dark rounded-bottom-4 bottom-row">
+        <div class="col-2 text-center time" id="17">17:00pm</div>
+        <textarea class="col-9 content"></textarea>
+        <button class="col-1 text-center save">
+          <img
+            src="./assets/images/save-(black).png"
+            alt="Save"
+            class="save-img"
+          />
+        </button>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
